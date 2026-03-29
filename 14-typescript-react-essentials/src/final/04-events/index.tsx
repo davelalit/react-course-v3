@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-type Person = {
-  name: string;
-};
+// type Person = {
+//   name: string;
+// };
 
 function Component() {
   const [text, setText] = useState('');
@@ -16,10 +16,10 @@ function Component() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // const formData = new FormData(e.currentTarget);
-    const formData = new FormData(e.target as HTMLFormElement);
+    // const formData = new FormData(e.target as HTMLFormElement);
     // const data = Object.fromEntries(formData);
-    const text = formData.get('text') as string;
-    const person: Person = { name: text };
+    // const text = formData.get('text') as string;
+    // const person: Person = { name: text };
   };
 
   return (
